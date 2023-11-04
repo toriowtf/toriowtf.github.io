@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techland</title>
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom border-body sticky-top" id="nav" data-bs-theme="dark">
+        <div class="container-fluid d-flex justify-content-between align-items-center centered">
+            <div class="d-flex align-items-center">
+              <a class="navbar-brand" href="index.html">Techland</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bottom">Contacts</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Catalog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mice.html">Mice</a></li>
+                                <li><a class="dropdown-item" href="keyboards.html">Keyboards</a></li>
+                                <li><a class="dropdown-item" href="headphones.html">Headphones</a></li>
+                                <li><a class="dropdown-item" href="mousepads.html">Mousepads</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <form class="d-flex nav-search" role="search" id="searchForm">
+                <div class="input-group">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-sm btn-outline-light" type="button"><img src="img/search.png" class="icon"></button>
+                </div>
+            </form>
+    
+            <div class="d-flex align-items-center nav-right">
+
+                <a href="login.html" class="nav-right-item me-2">
+                  <img class="icon" src="img/user.png" alt="User">
+                </a>
+              
+                <div class="shopping">
+                  <a class="nav-right-item ms-2">
+                    <img class="icon" src="img/cart.png" alt="Cart">
+                    <span class="quantity">0</span>
+                </a>
+              </div>
+
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <div class="container centered d-flex mt-3 mb-3">
+
+        <div id="demo" class="carousel slide centered" data-bs-ride="carousel">
+          <h2 class="commingsoon"><strong>Coming Soon...</strong></h2>
+          <p id="timer"></p>
+
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/keychronq1.png" alt="Keychron Q1" class="d-block rounded-3 carousel-img">
+              <div class="carousel-caption">
+                <h5>Keychron Q1</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/lamzu.png" alt="Lamzu Atlantis" class="d-block rounded-3 carousel-img">
+              <div class="carousel-caption">
+                <h5>Lamzu Atlantis</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/g733.png" alt="Logitech G733" class="d-block rounded-3 carousel-img">
+              <div class="carousel-caption">
+                <h5>Logitech G733</h5>
+                </div>
+            </div>
+          </div>
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+
+      <div class="quiz-container mt-4 ms-4">
+        <div class="question"><h2><strong>Match the products with their category:</strong></h2></div>
+        <div class="draggable" id="mouse" draggable="true">Logitech GPX</div>
+        <div class="draggable" id="headset" draggable="true">HyperX Cloud II</div>
+        <div class="draggable" id="keyboard" draggable="true">Wooting 60HE</div>
+        <div class="droppable" id="mouse">Mouse</div>
+        <div class="droppable" id="headset">Headset</div>
+        <div class="droppable" id="keyboard">Keyboard</div>
+        <div class="submit-btn">Submit</div>
+    </div>
+
+    </div>
+        
+
+
+    <div class="container centered mt-5">
+
+      <h2 class="mb-3"><strong>Best selling</strong></h2>
+
+      <div class="items row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+          </div>
+        </div>
+        
+        <div class="pop">
+          <h1></h1>
+          <ul class="listCard">
+  
+          </ul>
+          <div class="checkOut">
+              <div class="total">0</div>
+              <div class="closeShopping">Close</div>
+          </div>
+      </div>
+
+
+
+
+        <div class="btn-toolbar justify-content-center m-5" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-primary">1</button>
+            <button type="button" class="btn btn-outline-secondary">2</button>
+            <button type="button" class="btn btn-outline-secondary">3</button>
+          </div>
+        </div>
+        
+        <!--Footer-->
+        <div class="container-fluid bg-dark footer" id="bottom">
+          <div class="row">
+            <div class="col mt-3">
+              <form id="emailForm">
+                <label for="email"><strong>Subscribe to Updates</strong></label>
+                <div class="mb-3 mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <button type="submit" id="validate" class="btn btn-outline-primary">Submit</button>
+              </form>
+              
+              <div id="errorMessages"></div>
+              
+            </div>
+            <div class="col">
+              <label for="comment" class="mb-3 mt-3"><strong>Recomendations to Improve:</strong></label>
+              <textarea class="form-control" rows="1" id="comment" name="text"></textarea>
+              <button type="submit" class="btn btn-outline-primary mt-3">Submit</button>
+            </div>  
+          </div>
+            <ul>
+            <em>                
+                <li>8 800 555 3535</li>
+                <li>221399@astanait.edu.kz</li>
+                <li>Assan | 2023</li>
+                <li>© All Rights Reserved</li>
+            </em>
+            </ul>
+          </div>
+
+        <audio id="clickSound" src="yay.mp3"></audio>
+        <script src="main.js"></script>
+        <script src="cart.js"></script>
+        <script src="sound.js"></script>
+        <script src="drag.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
+</html>
